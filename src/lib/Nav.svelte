@@ -25,11 +25,12 @@
 		{
 			link: '/bucketlist',
 			value: 'Bucket List'
-		},
-		{
-			link: '/ml',
-			value: 'ML Playbook'
 		}
+		// ,
+		// {
+		// 	link: '/ml',
+		// 	value: 'ML Playbook'
+		// }
 	];
 
 	$: console.log(showMobileDropdown)

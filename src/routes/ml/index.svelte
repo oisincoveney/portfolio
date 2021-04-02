@@ -1,7 +1,9 @@
 <script>
 	import BlogEntry from '../../lib/BlogEntry.svelte';
+
+	const url = (route) => `/ml/${route}`
 </script>
-<BlogEntry title="Backpropagation" />
+<BlogEntry title="Backpropagation" link={url('backprop')} />
 
 
 
