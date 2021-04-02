@@ -43,12 +43,14 @@
 				 src="{bg}" />
 		<div transition:fade="{{duration: 500}}"
 				 id={"gradient-image-background" }
-				 class="background-pos"></div>
+				 class="background-pos"
+		style="opacity: 65%;"></div>
 
 	{:else}
 		<div transition:fade="{{duration: 500}}"
 				 id={"background-standalone"}
-				 class="background-pos"></div>
+				 class="background-pos"
+		style="opacity: 90%;"></div>
 	{/if}
 	<!--Set navbar and theme change button-->
 	<div id="navbar" in:fly="{{ y: -50, duration: 600}}">
