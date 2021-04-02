@@ -1,4 +1,12 @@
-<div>
-	<a href="/ml/backprop">Backpropagation Notes</a>
-	<a href="/ml/backprop">Backpropagation Notes</a>
-</div>
+<script>
+	import BlogEntry from '../../lib/BlogEntry.svelte';
+</script>
+<BlogEntry title="Backpropagation" />
+
+
+
+<style>
+	div > a {
+			font-size: 3rem;
+	}
+</style>

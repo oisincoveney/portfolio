@@ -6,11 +6,18 @@
 
 
 <div id="link"><a href={link}>{title}</a></div>
-<div id="description">{description}</div>
+{#if description}
+	<div id="description">{description}</div>
+{/if}
 
+<style lang="css">
+    #link {
+        font-size: 3rem;
+        transition: color 150ms ease-in;
+    }
 
-<style>
-	#link {
-			font-size: 3rem;
-	}
+    #link:hover {
+        color: var(--gradient-after);
+        filter: brightness(0.8);
+    }
 </style>
