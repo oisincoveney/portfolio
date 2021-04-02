@@ -117,12 +117,7 @@
 
 <style lang="scss">
   @import '../../scss/_breakpoints';
-
-  @mixin resume-card($color-primary, $color-text) {
-    color: lighten($color-text, 30%);
-    background: lighten($color-primary, 15%);
-    border-radius: 1.5rem;
-  }
+	@import '../../scss/mixins';
 
   .res-courses {
     display: flex;
@@ -174,7 +169,7 @@
       left: 0;
       z-index: 2;
       background: black;
-      opacity: 30%;
+      opacity: 0.4;
       width: 100%;
       height: 100%;
     }

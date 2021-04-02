@@ -1,3 +1,9 @@
+@mixin resume-card($color-primary, $color-text) {
+  color: lighten($color-text, 30%);
+  background: lighten($color-primary, 15%);
+  border-radius: 1.5rem;
+}
+
 @mixin fade-in-animation($duration, $delay: 0s) {
   opacity: 0;
   -webkit-animation: $duration ease $delay normal forwards 1 fadein;
