@@ -1,0 +1,105 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+@font-face {
+  font-family: "Mission Gothic";
+  src: url("/otf/mgregular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Mission Gothic Bold";
+  font-weight: bold;
+  src: url("/otf/mgbold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Mission Gothic Black";
+  font-weight: 800;
+  src: url("/otf/mgblack.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: "Mission Gothic Black Italic";
+  font-weight: 800;
+  font-style: italic;
+  src: url("/otf/mgblackitalic.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: "Mission Gothic Thin";
+  font-weight: 300;
+  src: url("/otf/mgthin.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: "Mission Gothic Light";
+  font-weight: 200;
+  src: url("/otf/mglight.otf") format("opentype");
+}
+
+
+.dark {
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #283141;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-accent: #81e6d9;
+
+  --bg-gradient: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(31, 30, 51) 50%, rgb(160, 159, 174) 100%);
+
+
+  --gradient-before: rgb(2, 0, 36);
+  --gradient-after: rgb(31, 30, 51);
+
+
+}
+
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+
+  --bg-gradient: linear-gradient(0deg, rgb(175, 177, 255) 0%,
+          rgba(206, 190, 255, 1) 50%,
+          rgba(236, 202, 255, 1) 100%);
+
+  --gradient-after: rgb(175, 177, 255);
+  --gradient-before: rgb(236, 202, 255);
+
+}
+
+
+a:visited, a:-webkit-any-link {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+body {
+  /*@apply .dark;*/
+  font-family: "Mission Gothic Light", 'Inria Sans', sans-serif;
+  color: var(--color-text-primary);
+  //background: var(--color-bg-primary);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  //transition: background 3000ms ease-in-out,
+  //color 3000ms ease-in-out,
+  //background-color 3000ms ease-in-out,
+  //background-position 300ms ease-in-out;
+
+  //height: 100vh;
+  //width: 100vw;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

@@ -1,0 +1,75 @@
+@mixin fade-in-animation($duration, $delay: 0s) {
+  opacity: 0;
+  -webkit-animation: $duration ease $delay normal forwards 1 fadein;
+  animation: $duration ease $delay normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin fly-fade-in-animation($duration, $delay: 0s) {
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: $duration ease $delay normal forwards 1 fadefly;
+  animation: $duration ease $delay normal forwards 1 fadefly;
+}
+
+$startY: 100px;
+$midY: 80px;
+
+@keyframes fadefly {
+  0% {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY($startY);
+  }
+  66% {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY($midY);
+  }
+  100% {
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadefly {
+  0% {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY($startY);
+  }
+  66% {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY($midY);
+  }
+  100% {
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

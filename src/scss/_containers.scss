@@ -1,0 +1,27 @@
+@import './_breakpoints';
+
+
+@mixin bpts($p-top, $p-x) {
+  :global(.container) {
+    height: calc(100vh - #{$p-top});
+    width: calc(100vw - 2 * #{$p-x});
+    padding: $p-top $p-x 0;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint('xs', 'sm') {
+  @include bpts(8rem, 0.5rem)
+}
+
+@include breakpoint('sm', 'md') {
+  @include bpts(8rem, 1.2rem)
+}
+
+@include breakpoint('md', 'lg') {
+  @include bpts(8rem, 4rem)
+}
+
+@include breakpoint('lg') {
+  @include bpts(8rem, 8rem)
+}
