@@ -101,36 +101,9 @@
     height: 100%;
     width: fit-content;
     margin: auto;
-    min-width: 50vw;
+    // min-width: 50vw;
   }
 
-
-  //// Set spacing for elements in the navbar
-  //#navbar {
-  //  display: flex;
-  //  flex-direction: row;
-  //  justify-content: space-between;
-  //}
-  //
-  //
-  //// Set positioning for page elements
-  //
-  //.nav-pos {
-  //  z-index: 1;
-  //  position: fixed;
-  //  top: 2rem;
-  //  left: 3rem;
-  //  right: 3rem;
-  //  width: calc(100vw - 6rem);
-  //}
-  //
-  //.main-pos {
-  //  height: 90vh;
-  //  width: 100vw;
-  //	padding-top: 4rem;
-  //
-  //}
-  //
   .background-pos {
     position: fixed;
     top: 0;
