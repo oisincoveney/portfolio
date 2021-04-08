@@ -1,11 +1,12 @@
 <script>
-	import { fade, fly } from 'svelte/transition';
-
 	import { onMount } from 'svelte';
+	import { fade, fly } from 'svelte/transition';
+	import { page, navigating } from '$app/stores';
 
 	import '../global.scss';
+  
+	import Head from '$lib/Head.svelte'
 	import Nav from '../lib/Nav.svelte';
-	import { page, navigating } from '$app/stores';
 
 
 	const getBackgroundURL = (pathname) => {
@@ -36,11 +37,12 @@
 
 </script>
 
+
 {#if ready}
 	{#if bg}
 		<img transition:fade="{{duration: 500}}" id="background-image-styling"
 				 class="background-pos"
-				 src="{bg}" />
+				 src="{bg}" alt="Background"/>
 		<div transition:fade="{{duration: 500}}"
 				 id={"gradient-image-background" }
 				 class="background-pos"

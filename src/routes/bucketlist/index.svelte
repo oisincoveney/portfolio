@@ -1,4 +1,6 @@
 <script>
+import Head from "$lib/Head.svelte";
+
 	const done = [
 		{
 			goal: "Set up a personal Jupyter Notebook server",
@@ -25,6 +27,8 @@
 		}
 	];
 </script>
+
+<Head title="Bucket List"></Head>
 
 <div id="heading">2021 Bucket List</div>
 

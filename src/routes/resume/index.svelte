@@ -1,6 +1,10 @@
 <script>
+  import Head from "$lib/Head.svelte"
 	import { data as resume } from '$lib/resume';
 </script>
+
+<Head title="Resume"></Head>
+
 
 
 <div class="resume-heading">
@@ -11,9 +15,9 @@
 	{#each resume.work as res}
 		<div class="experience-card {res.company.split(' ')[0]}-card">
 			{#if res.company === 'Clearwater Analytics'}
-				<img src="/img/clearwater.png" />
+				<img src="/img/clearwater.png" alt="Clearwater" />
 			{:else}
-				<img src="/img/{res.company.split(' ')[0].toLowerCase()}.svg" />
+				<img src="/img/{res.company.split(' ')[0].toLowerCase()}.svg" alt={res.company} />
 			{/if}
 			<div class="logo-cover"></div>
 			<div class="text-elements">
@@ -54,7 +58,7 @@
 <div class="resume-heading">Here are my schools</div>
 <section class="school experience">
 	<div class="experience-card DCU-card">
-		<img src="/img/dcu.svg">
+		<img src="/img/dcu.svg" alt="Dublin City University">
 		<div class="logo-cover"></div>
 		<div class="text-elements">
 			<div class="elem-container">
@@ -78,7 +82,7 @@
 	</div>
 
 	<div class="experience-card SJSU-card">
-		<img src="/img/sjsu.svg">
+		<img src="/img/sjsu.svg" alt="San Jose State University">
 		<div class="logo-cover"></div>
 		<div class="text-elements">
 			<div class="elem-container">
@@ -138,7 +142,6 @@
     flex-wrap: wrap;
     gap: 1rem;
 		max-width: 100%;
-    //margin: 0 auto;
   }
 
   .elem-container {

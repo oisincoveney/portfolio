@@ -1,5 +1,8 @@
 <script>
+  import Head from '$lib/Head.svelte'
 </script>
+
+<Head title="Home"></Head>
 
 <div id="header-container">
 	<div class="header">

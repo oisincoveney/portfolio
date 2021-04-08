@@ -1,7 +1,10 @@
 <script>
+	import Head from '$lib/Head.svelte'
+
 	export let title;
 </script>
 
+<Head title={title}></Head>
 
 <div id="title">{title}</div>
 <div id="content">
